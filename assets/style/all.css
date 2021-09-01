@@ -7,12 +7,25 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+  margin: 0;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
+.footer-jumbotron {
+  background-image: url("../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+}
+
+.index__h1 {
+  color: #00cc99;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=all.css.map */
