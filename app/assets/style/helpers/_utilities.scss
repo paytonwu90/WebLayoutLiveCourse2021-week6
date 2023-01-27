@@ -1,0 +1,44 @@
+.fs-small {
+  font-size: $font-size-sm;
+}
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.square {
+  aspect-ratio: 1 / 1; /* width and height are equal proportion */
+}
+.aspect-ratio-2-1 {
+  aspect-ratio: 2 / 1;
+}
+.aspect-ratio-md-auto {
+  @include media-breakpoint-up(md) {
+    aspect-ratio: auto;
+  }
+}
+.aspect-ratio-lg-auto {
+  @include media-breakpoint-up(lg) {
+    aspect-ratio: auto;
+  }
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+.object-position-right {
+  object-position: right;
+}
+
+.border-md-end {
+  @include media-breakpoint-up(md) {
+    border-right: 1px solid #000;
+  }
+}
+
+.border-radius-1 {
+  border-radius: 4px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

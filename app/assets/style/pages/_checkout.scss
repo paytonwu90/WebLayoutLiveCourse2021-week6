@@ -1,0 +1,36 @@
+.checkoutProgress {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-top: 2px solid $secondary;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 20px;
+  }
+  li {
+    position: relative;
+    font-weight: 300;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    &.active {
+      font-weight: 500;
+      &::before {
+        background-color: $secondary;
+      }
+    }
+    &.done::before {
+      background-color: $secondary;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -5px;
+      transform: translateX(-50%);
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border: 1px solid $secondary;
+      border-radius: 50%;
+    }
+  }
+}
+

@@ -1,7 +1,17 @@
-//@import "../../../node_modules/bootstrap/scss/functions";
-//@import "./helpers/variables";
-//@import "../../../node_modules/bootstrap/scss/bootstrap";
+/* 
+雖然作業範例是把下面跟 bootstrap 相關的這三行放在 bootstrap.css，並在 <head> 裡跟 all.css 分開引用，
+但是這種方法會造成在 variables 裡面修改變數的時候無法立即反應在網頁上，每次都要重啟 gulp，猜測是因為 gulp 並沒有監聽 bootstrap.css 的關係。
+還有另外一點是獨立一支 bootstrap.css 會讓我沒辦法在其他 scss 使用 bootstrap 的斷點，gulp 會出現 compile 錯誤。
+所以還是把全部的東西都放在 all.scss
+*/
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 @import './config/base';
+@import './components/nav';
+@import './helpers/utilities';
 @import './layout/layout';
-@import './layout/index';
+@import './pages/index';
+@import './pages/detail';
+@import './pages/checkout';

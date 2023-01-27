@@ -1,0 +1,147 @@
+---
+title: 填寫訂購資訊
+layout: ./app/checkout.ejs
+engine: ejs
+current: checkout_orderInfo
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <ul class="checkoutProgress d-flex justify-content-around ps-0">
+        <li class="done">確認訂單</li>
+        <li class="active">填寫訂購資訊</li>
+        <li>填寫付款資訊</li>
+        <li>完成訂購</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mb-11 mb-lg-3">
+    <!-- 訂購資訊表單 -->
+    <div class="col-lg-4 order-lg-1 mb-6 mb-lg-0">
+      <h3 class="fs-7 mb-4">訂購人資訊</h3>
+      <form class="mb-13" action="" method="post">
+        <div class="mb-5">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+        </div>
+        <div class="mb-5">
+          <label for="name" class="form-label">姓名</label>
+          <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+        </div>
+        <div class="mb-5">
+          <label for="phone" class="form-label">聯絡電話</label>
+          <input type="tel" class="form-control" id="phone" placeholder="請輸入電話">
+        </div>
+        <div class="">
+          <label for="coupon" class="form-label">優惠碼</label>
+          <input type="text" class="form-control" id="coupon" placeholder="TG87526" class="mb-1">
+          <p class="text-primary fs-small text-end">優惠碼已生效</p>
+        </div>
+      </form>
+      <p class="d-flex justify-content-between mb-1">
+        <span class="fw-medium">小計</span><span class="fw-light">NT$1050</span>
+      </p>
+      <p class="d-flex justify-content-between mb-2">
+        <span class="fw-medium">折扣</span><span class="fw-light">-NT$50</span>
+      </p>
+      <p class="d-flex justify-content-between fs-7 fw-medium">
+        <span>總金額</span><span>NT$1000</span>
+      </p>
+    </div>
+
+    <div class="col-lg-8">
+      <!-- 2020 台味設計展 -->
+      <div class="row mb-5">
+        <div class="col-6 col-md-5 col-lg-3">
+          <img class="d-block w-100 aspect-ratio-2-1 aspect-ratio-lg-auto object-fit-cover" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-7 col-lg-3">
+          <div class="d-flex flex-column h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="fw-bold">2020 台味設計展</p>
+              <span class="material-symbols-outlined cursor-pointer d-lg-none">close</span>
+            </div>
+            <p class="fw-medium mb-auto">01 JUN — 31 OCT</p>
+            <div class="d-flex align-items-center">
+              <span class="text-dark me-1">全票</span>
+              <span class="d-lg-none fs-7 fw-bold me-auto">1</span>
+              <span class="d-lg-none fs-7 fw-bold">NT$350</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-none d-lg-flex align-items-center h-100">
+            <p class="fs-7 fw-bold me-13 me-lg-15">NT$350</p>
+            <p class="fs-7 fw-bold">1</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- No.22 線上設計展 -->
+      <div class="row mb-5">
+        <div class="col-6 col-md-5 col-lg-3">
+          <img class="d-block w-100 aspect-ratio-2-1 aspect-ratio-lg-auto object-fit-cover" src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-7 col-lg-3">
+          <div class="d-flex flex-column h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="fw-bold">No.22 線上設計展</p>
+              <span class="material-symbols-outlined cursor-pointer d-lg-none">close</span>
+            </div>
+            <p class="fw-medium mb-auto">01 JUN — 31 OCT</p>
+            <div class="d-flex align-items-center">
+              <span class="text-dark me-1">全票</span>
+              <span class="d-lg-none fs-7 fw-bold me-auto">1</span>
+              <span class="d-lg-none fs-7 fw-bold">NT$350</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-none d-lg-flex align-items-center h-100">
+            <p class="fs-7 fw-bold me-13 me-lg-15">NT$350</p>
+            <p class="fs-7 fw-bold">1</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 高雄設計節 -->
+      <div class="row">
+        <div class="col-6 col-md-5 col-lg-3">
+          <img class="d-block w-100 aspect-ratio-2-1 aspect-ratio-lg-auto object-fit-cover" src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+        </div>
+        <div class="col-6 col-md-7 col-lg-3">
+          <div class="d-flex flex-column h-100">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="fw-bold">高雄設計節</p>
+              <span class="material-symbols-outlined cursor-pointer d-lg-none">close</span>
+            </div>
+            <p class="fw-medium mb-auto">01 JUN — 31 OCT</p>
+            <div class="d-flex align-items-center">
+              <span class="text-dark me-1">全票</span>
+              <span class="d-lg-none fs-7 fw-bold me-auto">1</span>
+              <span class="d-lg-none fs-7 fw-bold">NT$350</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-none d-lg-flex align-items-center h-100">
+            <p class="fs-7 fw-bold me-13 me-lg-15">NT$350</p>
+            <p class="fs-7 fw-bold">1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row mb-10">
+    <div class="col-6 col-lg-2">
+      <a href="checkout_confirmOrder.html" class="btn btn-outline-primary w-100">返回</a>
+    </div>
+    <div class="col-6 col-lg-4 offset-lg-6">
+      <a href="checkout_billingInfo.html" class="btn btn-secondary w-100">下一步</a>
+    </div>
+  </div>
+</div>

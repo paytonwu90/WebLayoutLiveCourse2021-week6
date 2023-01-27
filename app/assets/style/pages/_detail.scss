@@ -1,0 +1,9 @@
+.detail__ex-img {
+  height: 256px;
+}
+
+.detail__ticket {
+  @include media-breakpoint-up(md) {
+    height: 256px;
+  }
+}

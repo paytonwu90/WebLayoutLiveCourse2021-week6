@@ -1,0 +1,108 @@
+<nav class="navbar navbar-expand-lg border-bottom border-dark py-5 py-md-7">
+  <div class="container-fluid">
+    <a class="navbar-brand position-absolute top-50 start-50 translate-middle fs-5 text-primary" href="index.html">EXHIBINECTION</a>
+    
+    <!-- .collapse.navbar-collapse 透過父層斷點來群組、隱藏導覽列內容。 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto me-8">
+        <li class="nav-item me-8">
+          <a class="nav-link text-dark" href="#">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
+    <a class="d-flex position-relative text-black ms-auto" href="#offcanvasExample" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample">
+      <span class="material-symbols-outlined">
+        confirmation_number
+      </span>
+      <span class="cartBadge badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">3</span>
+    </a>
+  </div>
+</nav>
+
+
+
+
+<div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header text-white pt-5 pt-md-8 pb-3 px-4 px-md-8">
+    <h5 class="offcanvas-title fs-3 fw-bold" id="offcanvasExampleLabel">Cart List</h5>
+    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body py-0 px-4 px-md-8">
+    <!-- cart items -->
+    <div class="position-relative bg-white pt-9 pt-md-7 pb-4 pb-md-6 px-4 px-md-8 mb-2 mb-md-3 border-radius-1">
+      <a class="cartItem-removeBtn position-absolute text-black" href="javascript:;"><span class="material-symbols-outlined">
+        close
+        </span></a>
+      <div class="d-flex">
+        <img class="cartImg object-fit-cover me-4" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <p class="fw-bold mb-1">2020 台味設計展</p>
+            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+            <p class="text-dark mb-auto">全票</p>
+          </div>
+          <p class="fs-7 fw-bold">NT$350</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+          <span class="material-symbols-outlined cursor-pointer mb-3 mb-md-0 me-md-3">remove</span>
+          <p class="fs-7 fw-bold mb-3 mb-md-0 me-md-3">01</p>
+          <span class="material-symbols-outlined cursor-pointer">add</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative bg-white pt-9 pt-md-7 pb-4 pb-md-6 px-4 px-md-8 mb-2 mb-md-3 border-radius-1">
+      <a class="cartItem-removeBtn position-absolute text-black" href="javascript:;"><span class="material-symbols-outlined">
+        close
+        </span></a>
+      <div class="d-flex">
+        <img class="cartImg object-fit-cover me-4" src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <p class="fw-bold mb-1">No.22 線上設計展</p>
+            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+            <p class="text-dark mb-auto">全票</p>
+          </div>
+          <p class="fs-7 fw-bold">NT$350</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+          <span class="material-symbols-outlined cursor-pointer mb-3 mb-md-0 me-md-3">remove</span>
+          <p class="fs-7 fw-bold mb-3 mb-md-0 me-md-3">01</p>
+          <span class="material-symbols-outlined cursor-pointer">add</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative bg-white pt-9 pt-md-7 pb-4 pb-md-6 px-4 px-md-8 mb-2 mb-md-3 border-radius-1">
+      <a class="cartItem-removeBtn position-absolute text-black" href="javascript:;"><span class="material-symbols-outlined">
+        close
+        </span></a>
+      <div class="d-flex">
+        <img class="cartImg object-fit-cover me-4" src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <p class="fw-bold mb-1">高雄設計節</p>
+            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+            <p class="text-dark mb-auto">全票</p>
+          </div>
+          <p class="fs-7 fw-bold">NT$350</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+          <span class="material-symbols-outlined cursor-pointer mb-3 mb-md-0 me-md-3">remove</span>
+          <p class="fs-7 fw-bold mb-3 mb-md-0 me-md-3">01</p>
+          <span class="material-symbols-outlined cursor-pointer">add</span>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  <div class="d-flex align-items-center text-white pt-7 pb-5 pb-md-8 px-4 px-md-8">
+    <p class="fs-7 fw-medium me-6">小計</p>
+    <p class="fs-7 fw-medium me-auto">NT$1050</p>
+    <a class="btn bg-white text-primary py-2 px-7" href="checkout_confirmOrder.html">前往結帳</a>
+  </div>
+</div>

@@ -1,3 +1,31 @@
+.cartBadge {
+  padding: 2px 8px;
+}
+
 .footer-jumbotron {
+  height: 400px;
   background-image: url('../images/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.offcanvas-end {
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: 540px;
+  }
+}
+.cartImg {
+  width: 120px;
+  height: 120px;
+}
+.cartItem-removeBtn {
+  left: 4px;
+  top: 4px;
+}
+
+.guess {
+  img {
+    height: 350px;
+  }
 }

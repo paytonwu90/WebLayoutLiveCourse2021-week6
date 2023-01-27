@@ -1,0 +1,20 @@
+.nav {
+  flex-wrap: nowrap;
+}
+.nav .nav-link {
+  position: relative;
+  padding: 14px 18px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    width: 90%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color .35s ease;
+  }
+  &:hover::after, &.active::after {
+    background-color: #E31277;
+  }
+}

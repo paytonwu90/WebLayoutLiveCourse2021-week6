@@ -73,8 +73,8 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-900 !default;
+$light:         #EFEFEF; //$gray-100 !default;
+$dark:          #707070; //$gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -252,9 +252,22 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75, //$spacer,              12px
+  4: $spacer, //$spacer * 1.5,              16px
+  5: $spacer * 1.25, //$spacer * 3,         20px
+  6: $spacer * 1.5, //new                   24px
+  7: $spacer * 1.75, //new                  28px
+  8: $spacer * 2, //new                     32px
+  9: $spacer * 2.25, //new                  36px
+  10: $spacer * 2.5, //new                  40px
+  11: $spacer * 3, //new                    48px
+  12: $spacer * 3.25, //new                 52px
+  13: $spacer * 3.5, //new                  56px
+  14: $spacer * 3.75, //new                 60px
+  15: $spacer * 5, //new                    80px
+  16: $spacer * 5.625, //new                90px
+  17: $spacer * 6, //new                    96px
+  18: $spacer * 6.375, //new                102px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -286,7 +299,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none; //underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -343,7 +356,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.875rem; //1.5rem !default;
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
@@ -442,11 +455,14 @@ $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h2-font-size:                $font-size-base * 2.25; //$font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 2; //$font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.75; //$font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.5; //$font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base * 1.375; //$font-size-base !default;
+$h7-font-size:                $font-size-base * 1.25; //new
+$h8-font-size:                $font-size-base; //new
+$h9-font-size:                $font-size-base * 0.875; //new
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -456,7 +472,10 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size
 ) !default;
 // scss-docs-end font-sizes
 
@@ -465,7 +484,7 @@ $headings-margin-bottom:      $spacer * .5 !default;
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
+$headings-line-height:        1.5; //1.2 !default;
 $headings-color:              null !default;
 // scss-docs-end headings-variables
 
@@ -1084,8 +1103,8 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0; //$border-width !default;
+$card-border-radius:                0; //$border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
