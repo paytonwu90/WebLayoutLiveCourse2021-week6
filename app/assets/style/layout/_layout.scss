@@ -9,8 +9,25 @@
   background-size: cover;
 }
 
-.offcanvas-end {
+.cartOffCanvas {
   width: 100%;
+  & .offcanvas-body {
+    /* Width */
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #E9ECEF; 
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $secondary; 
+    }
+  }
+  
   @include media-breakpoint-up(sm) {
     width: 540px;
   }
