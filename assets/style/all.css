@@ -16840,12 +16840,30 @@ body {
   background-size: cover;
 }
 
-.offcanvas-end {
+.cartOffCanvas {
   width: 100%;
 }
 
+.cartOffCanvas .offcanvas-body {
+  /* Width */
+  /* Track */
+  /* Handle */
+}
+
+.cartOffCanvas .offcanvas-body::-webkit-scrollbar {
+  width: 2px;
+}
+
+.cartOffCanvas .offcanvas-body::-webkit-scrollbar-track {
+  background: #E9ECEF;
+}
+
+.cartOffCanvas .offcanvas-body::-webkit-scrollbar-thumb {
+  background: #E31277;
+}
+
 @media (min-width: 576px) {
-  .offcanvas-end {
+  .cartOffCanvas {
     width: 540px;
   }
 }
