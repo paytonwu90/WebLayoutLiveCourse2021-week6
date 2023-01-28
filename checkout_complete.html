@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>完成訂購</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg border-bottom border-dark py-5 py-md-7">
+  <div class="container-fluid">
+    <a class="navbar-brand position-absolute top-50 start-50 translate-middle fs-5 text-primary" href="index.html">EXHIBINECTION</a>
+    
+    <!-- .collapse.navbar-collapse 透過父層斷點來群組、隱藏導覽列內容。 -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto me-8">
+        <li class="nav-item me-8">
+          <a class="nav-link text-dark" href="#">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
+    <a class="d-flex position-relative text-black ms-auto" href="#offcanvasExample" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample">
+      <span class="material-symbols-outlined">
+        confirmation_number
+      </span>
+      <span class="cartBadge badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle">3</span>
+    </a>
+  </div>
+</nav>
+
+
+
+
+<div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header text-white pt-5 pt-md-8 pb-3 px-4 px-md-8">
+    <h5 class="offcanvas-title fs-3 fw-bold" id="offcanvasExampleLabel">Cart List</h5>
+    <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body py-0 px-4 px-md-8">
+    <!-- cart items -->
+    <div class="position-relative bg-white pt-9 pt-md-7 pb-4 pb-md-6 px-4 px-md-8 mb-2 mb-md-3 border-radius-1">
+      <a class="cartItem-removeBtn position-absolute text-black" href="javascript:;"><span class="material-symbols-outlined">
+        close
+        </span></a>
+      <div class="d-flex">
+        <img class="cartImg object-fit-cover me-4" src="./assets/images/alina-grubnyak-R84Oy89aNKs-unsplash.jpg" alt="">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <p class="fw-bold mb-1">2020 台味設計展</p>
+            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+            <p class="text-dark mb-auto">全票</p>
+          </div>
+          <p class="fs-7 fw-bold">NT$350</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+          <span class="material-symbols-outlined cursor-pointer mb-3 mb-md-0 me-md-3">remove</span>
+          <p class="fs-7 fw-bold mb-3 mb-md-0 me-md-3">01</p>
+          <span class="material-symbols-outlined cursor-pointer">add</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative bg-white pt-9 pt-md-7 pb-4 pb-md-6 px-4 px-md-8 mb-2 mb-md-3 border-radius-1">
+      <a class="cartItem-removeBtn position-absolute text-black" href="javascript:;"><span class="material-symbols-outlined">
+        close
+        </span></a>
+      <div class="d-flex">
+        <img class="cartImg object-fit-cover me-4" src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <p class="fw-bold mb-1">No.22 線上設計展</p>
+            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+            <p class="text-dark mb-auto">全票</p>
+          </div>
+          <p class="fs-7 fw-bold">NT$350</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+          <span class="material-symbols-outlined cursor-pointer mb-3 mb-md-0 me-md-3">remove</span>
+          <p class="fs-7 fw-bold mb-3 mb-md-0 me-md-3">01</p>
+          <span class="material-symbols-outlined cursor-pointer">add</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-relative bg-white pt-9 pt-md-7 pb-4 pb-md-6 px-4 px-md-8 mb-2 mb-md-3 border-radius-1">
+      <a class="cartItem-removeBtn position-absolute text-black" href="javascript:;"><span class="material-symbols-outlined">
+        close
+        </span></a>
+      <div class="d-flex">
+        <img class="cartImg object-fit-cover me-4" src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
+          <div>
+            <p class="fw-bold mb-1">高雄設計節</p>
+            <p class="fw-medium mb-1">01 JUN — 31 OCT</p>
+            <p class="text-dark mb-auto">全票</p>
+          </div>
+          <p class="fs-7 fw-bold">NT$350</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+          <span class="material-symbols-outlined cursor-pointer mb-3 mb-md-0 me-md-3">remove</span>
+          <p class="fs-7 fw-bold mb-3 mb-md-0 me-md-3">01</p>
+          <span class="material-symbols-outlined cursor-pointer">add</span>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+  <div class="d-flex align-items-center text-white pt-7 pb-5 pb-md-8 px-4 px-md-8">
+    <p class="fs-7 fw-medium me-6">小計</p>
+    <p class="fs-7 fw-medium me-auto">NT$1050</p>
+    <a class="btn bg-white text-primary py-2 px-7" href="checkout_confirmOrder.html">前往結帳</a>
+  </div>
+</div>
+
+    
+    
+      <ul class="nav justify-content-md-center flex-nowrap text-nowrap border-bottom border-dark overflow-auto">
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">音樂</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">戲劇</a>
+  </li>
+  <li class="nav-item">
+    
+      <a class="nav-link text-dark" href="design.html">設計</a>
+    
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">藝術</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">美食</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">旅遊</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">電影</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">親子</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">期間限定</a>
+  </li>
+</ul>
+    
+
+    
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="text-center text-primary pt-10 pt-md-18 mb-2" style="font-size: 44px;">
+        <i class="far fa-check-circle"></i>
+      </div>
+      <p class="fs-7 text-center text-primary mb-6">完成訂購</p>
+      <p class="mb-10">您的展覽憑證代碼為：</p>
+      <p class="text-center text-primary fs-5 mb-10 mb-md-11">qr147352</p>
+      <p class="mb-15 mb-md-17">恭喜您已完成「2020 台味設計展」的購票手續，請於 2020/06/01 ~ 2020/10/31 於展覽入口頁面輸入「展覽憑證代碼」，經驗證無誤即可瀏覽。</p>
+      <div class="row" style="margin-bottom: 123px;">
+        <div class="col-6"><a href="index.html" class="btn btn-outline-primary w-100">繼續瀏覽</a></div>
+        <div class="col-6"><a href="design.html" class="btn btn-secondary w-100">看展去</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
