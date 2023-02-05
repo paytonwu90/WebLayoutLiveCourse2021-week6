@@ -10,8 +10,9 @@
 
 @import './config/base';
 @import './components/nav';
+@import './components/timeline';
+@import './components/moreDetail';
 @import './helpers/utilities';
 @import './layout/layout';
 @import './pages/index';
 @import './pages/detail';
-@import './pages/checkout';
